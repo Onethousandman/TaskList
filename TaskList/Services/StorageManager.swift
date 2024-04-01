@@ -10,7 +10,7 @@ import CoreData
 final class StorageManager {
     static let shared = StorageManager()
     
-    lazy var persistentContainer: NSPersistentContainer = {
+    private lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "TaskList")
         container.loadPersistentStores { _, error in
             if let error = error as NSError? {

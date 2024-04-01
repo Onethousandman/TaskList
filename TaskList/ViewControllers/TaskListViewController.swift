@@ -14,8 +14,8 @@ enum typeAction {
 
 final class TaskListViewController: UITableViewController {
     private let storageManager = StorageManager.shared
-    private var taskList: [ToDoTask] = []
     private let cellID = "task"
+    private var taskList: [ToDoTask] = []
     private var selectedIndexPath: IndexPath?
 
     override func viewDidLoad() {
